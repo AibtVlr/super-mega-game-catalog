@@ -1,0 +1,48 @@
+.game-card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  height: calc(100vh - #{$header-height} - 1rem);
+  overflow-y: auto;
+}
+
+.game-card {
+  background: $dark;
+  //padding: 1rem
+  border-radius: $border-radius;
+  overflow: hidden;
+
+  &:hover {
+    .game-card-body {
+      bottom: -60%;
+    }
+
+    .game-card-image {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.game-card-image {
+  border-radius: $border-radius $border-radius 0 0;
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  object-position: top;
+  cursor: pointer;
+  transition: .3s ease-out;
+}
+
+.game-card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 1rem;
+  padding-top: 40px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0, 27, 66, 0.00) 0%, rgba(0, 27, 66, 0.64) 14.58%, #001B42 32.66%);
+  bottom: -76%;
+  transition: .3s ease-out;
+}

@@ -1,0 +1,9 @@
+.nav-tabs {
+  border: 0;
+  gap: 1rem;
+
+  .nav-link {
+    border-radius: $border-radius;
+    color: #fff;
+  }
+}

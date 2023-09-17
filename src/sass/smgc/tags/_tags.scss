@@ -1,0 +1,28 @@
+.tag {
+  background: $dark;
+  color: #fff;
+  border: none;
+  padding: 12px 16px 12px 16px;
+  border-radius: $border-radius;
+  font-size: 12px;
+  transition: .3s;
+
+  &:hover {
+    background: darken($dark, 3);
+    transform: scale(1.05);
+  }
+
+  &:focus {
+    outline: 0;
+  }
+
+  &:active {
+    color: $primary;
+    transform: scale(.95);
+  }
+
+  &.active {
+    outline: 1px solid $primary !important;
+    color: $primary;
+  }
+}

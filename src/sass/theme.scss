@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+
+@import "smgc/variables";
+
+@import 'node_modules/bootstrap/scss/bootstrap.scss';
+@import 'node_modules/bootstrap-vue/src/index.scss';
+
+@import "smgc/smgc";
+
+@import "reboot/reboot";
+
+@import "utilities/_utilities.scss";
+
+body {
+  position: relative;
+  font-family: 'Play', sans-serif;
+  background: $dark-bg;
+  color: #fff;
+  min-height: 100vh;
+}
